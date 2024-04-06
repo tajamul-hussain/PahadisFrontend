@@ -1,0 +1,114 @@
+/* Heading Animation */
+@keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .heading-animation {
+    animation: slideInLeft 1s ease-in-out;
+    margin-top: 30%;
+  }
+  .homepage-container
+  {
+    background-image:url('../assets/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom 100%;
+  }
+  /* Paragraph Animation */
+  @keyframes zoomIn {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .paragraph-animation {
+    animation: zoomIn 1s ease-in-out;
+  }
+  .homepage-container
+  {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
+  }
+  @keyframes colorChange {
+    0%, 100% {
+      color: #FF5733; /* Starting and ending color */
+    }
+    50% {
+      color: #5DADE2; /* Midway color */
+    }
+    75%
+    {
+      color: brown;
+    }
+  }
+  
+  @keyframes rotateText {
+    0%, 100% {
+      transform: rotate(0deg); /* Starting and ending rotation */
+    }
+    50% {
+      transform: rotate(180deg); /* Midway rotation */
+    }
+  }
+  
+  .pahadis-text {
+    animation: colorChange 5s infinite;/* Combine animations */
+    display: inline-block; 
+  }
+  
+
+  .animated-button {
+    margin-top: 3%;
+    animation: pulse-animation 1s infinite;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s ;
+    /* Add additional styles */
+    background-color: #6b83bc; /* Default background color */
+    color: yellowgreen; /* Text color */
+    border: none;
+   font-size:30px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 20px;
+   padding-right: 20px;
+  border-radius: 14px;
+
+  }
+  
+  .animated-button:hover {
+    cursor: pointer;
+    border-color: #f1ff5c;
+    color: white;
+    transform: translateY(2px) scale(1.1); /* Move the button down slightly and scale it up on hover */
+    box-shadow: 1px 1px 1px 0.5px; /* Adjust shadow */
+    transform: translateY(0.2em);
+    animation: none; /* Stop the pulse animation on hover */
+  }
+  
+  /* Define pulse animation */
+  @keyframes pulse-animation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

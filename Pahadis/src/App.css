@@ -1,0 +1,9 @@
+/* global.css */
+
+html {
+    /* background-image:url('../src/assets/tentnight.jpg'); */
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat; /* Adjust as needed */
+    background-position: top;
+    /* Add any other background properties here */
+  }
