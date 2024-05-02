@@ -5,4 +5,5 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     margin-bottom: 0px;
+    min-height: 100vh;
 }

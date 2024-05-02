@@ -25,8 +25,9 @@ const ContactPage = () => {
       </Card>
       <Card title="Facebook" className="contact-card" style={{ marginBottom: '20px' }}>
         <FacebookOutlined style={{ fontSize: '24px', marginRight: '10px' }} />
-        <a style={{ color: 'white' }} href="https://www.facebook.com/example" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a  href="https://www.facebook.com/example" target="_blank" rel="noopener noreferrer">Facebook</a>
       </Card>
+      
     </div>
   );
 }

@@ -88,6 +88,13 @@
   border-radius: 14px;
 
   }
+  @media(max-width:750px) {
+    .heading-animation
+    {
+      font-size: 18px;
+    }
+    
+  }
   
   .animated-button:hover {
     cursor: pointer;
